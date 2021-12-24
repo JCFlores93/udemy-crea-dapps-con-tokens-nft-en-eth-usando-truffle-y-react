@@ -1,0 +1,37 @@
+Usando Ganache CLI
+
+Línea de comandos:
+
+$ ganache-cli <opciones>
+
+Opciones:
+
+-a o --accounts: Especifica el número de cuentas a generar al inicio.
+
+-b o --blocktime: Especifica el tiempo de bloqueo en segundos para la minería automática. Por defecto es 0 y no hay minería automática.
+
+-d o --deterministic: Genera direcciones deterministas basadas en un mnemónico predefinido.
+
+-n o --secure: Bloquear las cuentas disponibles por defecto (bueno para la firma de transacciones de terceros).
+
+-m o --mnemónico: Utiliza un mnemónico específico de la cartera HD para generar las direcciones iniciales.
+
+-p o --port: Número de puerto para escuchar. El valor predeterminado es 8545.
+
+-h o --hostname: Nombre de host para escuchar. Por defecto es el servidor de Node.listen().
+
+-s o --seed: Utiliza datos arbitrarios para generar el mnemónico de la cartera HD a utilizar.
+
+-g o --gasPrice: Utiliza un precio de gas personalizado (por defecto es 20000000000)
+
+-l o --gasLimit: Utiliza un límite de gas personalizado (por defecto 90000)
+
+-f o --fork: Fork desde otro cliente Ethereum actualmente en ejecución en un bloque determinado. La entrada debe ser la ubicación y el puerto HTTP del otro cliente, por ejemplo, http://localhost:8545. Puede especificar opcionalmente el bloque desde el que se va a bifurcar utilizando un signo @: http://localhost:8545@1599200.
+
+-i o --networkId: Especifica el identificador de red que usará ganache-cli para identificarse (por defecto es la hora actual o el identificador de red del blockchain bifurcado si está configurado)
+
+--db: Especifica una ruta a un directorio para guardar la base de datos de la cadena. Si ya existe una base de datos, ganache-cli inicializará esa cadena en lugar de crear una nueva.
+
+--debug: Muestra los códigos de operación de la máquina virtual para su depuración.
+
+--mem: Muestra las estadísticas de uso de memoria de ganache-cli. Esto reemplaza la salida normal
